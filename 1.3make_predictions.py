@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
+import itertools
 
 
 def pairwise_distance(X, Z, N, K):
@@ -58,13 +59,23 @@ if __name__ == '__main__':
     # Z = np.array([[1, 1], [100, 101],[500,501]])
 
     N=1
-    K=3
+    K=1
 
-    responsibilities, loss = responsibilities_loss(trainData, trainTarget, validData, validTarget, N, K)
-    y = np.dot(responsibilities, trainTarget)
+    valid_responsibilities, valid_loss = responsibilities_loss(trainData, trainTarget, validData, validTarget, N, K)
+    train_responsibilities, train_loss = responsibilities_loss(trainData, trainTarget, trainData, trainTarget, N, K)
+    test_responsibilities, test_loss = responsibilities_loss(trainData, trainTarget, testData, testTarget, N, K)
+
+    y = np.dot(valid_responsibilities, trainTarget)
+    print validData
+    print y
+    # lists = sorted(itertools.izip(*[validData, y]))
+    # validData, y = list(itertools.izip(*lists))
+    print validData
     print "valid_prediction :", y
-    print "valid_loss :", loss
-    plt.plot(validData, y, 'ro', color='b')
+    print "valid_loss :", valid_loss
+    print "train_loss :", train_loss
+    print "test_loss :" , test_loss
+    plt.plot(validData, y,'ro', color='b')
     plt.plot(validData, validTarget, 'ro', color='r')
     plt.ylabel('Target')
     plt.show()

@@ -108,7 +108,7 @@ def run(lr, lam, batch_size, num_epoch):
 
             # if not (step % 50) or step < 10:
             #     print("Iter: %3d, MSE-train: %4.2f, bias: %.2f" % (step, err, currentb))
-            #     print("Iter: %3d, MSE-train: %4.2f, weights: %s, bias: %.2f" % (step, err, currentW.T, currentb))
+            #     print("Iter: %3d, MS E-train: %4.2f, weights: %s, bias: %.2f" % (step, err, currentW.T, currentb))
 
     # Test on the validation set
     errValid, valid_predict = sess.run([meanSquaredError,y_predicted], feed_dict={X: validData, y_target: validTarget})
@@ -169,4 +169,9 @@ if __name__ == '__main__':
     #2.2.3 run SGD with mini-batch size B=50 and use validation set to choose the best weight decay coefficient
     # that gives the best classification accuracy on the test set from
     # Lambda=[0, 0.0001, 0.001, 0.01, 0.1, 1]
-    run(lr=0.01, lam=1, batch_size=50, num_epoch=30)
+    # run(lr=0.01, lam=0., batch_size=50, num_epoch=300)
+    # run(lr=0.01, lam=0.0001, batch_size=50, num_epoch=300)
+    # run(lr=0.01, lam=0.001, batch_size=50, num_epoch=300)
+    # run(lr=0.01, lam=0.01, batch_size=50, num_epoch=800)
+    # run(lr=0.01, lam=0.1, batch_size=50, num_epoch=400)
+    # run(lr=0.01, lam=1, batch_size=50, num_epoch=500)

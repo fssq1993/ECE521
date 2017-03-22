@@ -1,0 +1,26 @@
+K=1
+Iter: 599, Loss: 25593.38
+Percentage of the data points assigned to k clusters [ 1.]
+The loss for the validation data: 12861.4
+
+K=2
+Iter: 599, Loss: 6089.34
+Percentage of the data points assigned to k clusters [ 0.50179964  0.49820036]
+The loss for the validation data: 3180.63
+
+K=3
+Iter: 599, Loss: 3409.44
+Percentage of the data points assigned to k clusters [ 0.3734253   0.39022195  0.23635273]
+The loss for the validation data: 1705.69
+
+
+K=4
+Iter: 599, Loss: 2233.92
+Percentage of the data points assigned to k clusters [ 0.12312537  0.37117577  0.37162566  0.13407318]
+The loss for the validation data: 1141.56
+
+K=5
+
+Iter: 599, Loss: 1914.29
+Percentage of the data points assigned to k clusters [ 0.3579784   0.09703059  0.10842831  0.07948411  0.35707858]
+The loss for the validation data: 936.775

@@ -1,0 +1,55 @@
+
+K=2
+Iter: 599, Loss: 805568.38
+Percentage of the data points assigned to k clusters [ 0.80000001  0.2       ]
+
+K=3
+ter: 599, Loss: 545763.75
+Percentage of the data points assigned to k clusters [ 0.5         0.30000001  0.2       ]
+
+K=4
+Iter: 599, Loss: 437433.31
+Percentage of the data points assigned to k clusters [ 0.2  0.5  0.2  0.1]
+
+K=5
+Iter: 599, Loss: 215276.11
+Percentage of the data points assigned to k clusters [ 0.2         0.2         0.30000001  0.2         0.1       ]
+
+K=6
+oss: 215282.89
+Iter: 599, Loss: 215282.12
+Percentage of the data points assigned to k clusters [ 0.2         0.1         0.2         0.2         0.          0.30000001]
+
+K=7
+Iter: 599, Loss: 212859.31
+Percentage of the data points assigned to k clusters [ 0.1047      0.          0.1         0.2         0.2         0.30000001
+  0.0953    ]
+
+K=8
+Iter: 599, Loss: 212899.94
+Percentage of the data points assigned to k clusters [ 0.2         0.          0.          0.30000001  0.0992      0.1         0.2
+  0.1008    ]
+
+K=9
+Iter: 599, Loss: 215283.81
+Percentage of the data points assigned to k clusters [ 0.          0.1         0.          0.          0.          0.2         0.2
+  0.30000001  0.2       ]
+
+K=10
+Iter: 599, Loss: 215163.55
+Percentage of the data points assigned to k clusters [  1.00000001e-01   0.00000000e+00   0.00000000e+00   1.99300006e-01
+   0.00000000e+00   2.00000003e-01   9.99999975e-05   2.00000003e-01
+   3.00000012e-01   6.00000028e-04]
+
+K=15
+Iter: 599, Loss: 215271.50
+Percentage of the data points assigned to k clusters [ 0.          0.1         0.          0.          0.          0.          0.
+  0.2         0.2         0.2         0.          0.30000001  0.          0.
+  0.        ]
+
+K=20
+Iter: 599, Loss: 366869.09
+Percentage of the data points assigned to k clusters [ 0.0909      0.          0.2         0.          0.          0.          0.
+  0.          0.          0.          0.0034      0.          0.
+  0.30000001  0.          0.1057      0.          0.          0.
+  0.30000001]

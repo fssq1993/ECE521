@@ -61,16 +61,19 @@ if __name__ == '__main__':
     N=1
     K=1
 
+
     valid_responsibilities, valid_loss = responsibilities_loss(trainData, trainTarget, validData, validTarget, N, K)
     train_responsibilities, train_loss = responsibilities_loss(trainData, trainTarget, trainData, trainTarget, N, K)
     test_responsibilities, test_loss = responsibilities_loss(trainData, trainTarget, testData, testTarget, N, K)
 
     y = np.dot(valid_responsibilities, trainTarget)
-    print validData
-    print y
+    # print validData
+    # print y
+
     # lists = sorted(itertools.izip(*[validData, y]))
     # validData, y = list(itertools.izip(*lists))
-    print validData
+
+    # print validData
     print "valid_prediction :", y
     print "valid_loss :", valid_loss
     print "train_loss :", train_loss
@@ -79,3 +82,20 @@ if __name__ == '__main__':
     plt.plot(validData, validTarget, 'ro', color='r')
     plt.ylabel('Target')
     plt.show()
+    #-------------------------------------------------------------
+    X = np.linspace(0.0, 11.0, num=1000)[:, np.newaxis]
+    X_Target = np.sin(X) + 0.1 * np.power(X, 2) \
+             + 0.5 * np.random.randn(1000, 1)
+
+    print X.shape
+    print X_Target.shape
+    X_responsibilities, X_loss = responsibilities_loss(trainData, trainTarget, X, X_Target, N, K)
+    y_X = np.dot(X_responsibilities, trainTarget)
+    plt.plot(X, y_X,'ro', color='b')
+    plt.plot(X, X_Target, 'ro', color='r')
+    plt.ylabel('Target')
+    plt.xlabel('Data')
+    plt.title('k='+str(K))
+    plt.show()
+
+

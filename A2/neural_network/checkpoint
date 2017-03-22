@@ -1,0 +1,3 @@
+model_checkpoint_path: "/home/yuanyi/ECE521/A2/neural_network/model10.ckpt"
+all_model_checkpoint_paths: "/home/yuanyi/ECE521/A2/neural_network/model5.ckpt"
+all_model_checkpoint_paths: "/home/yuanyi/ECE521/A2/neural_network/model10.ckpt"
